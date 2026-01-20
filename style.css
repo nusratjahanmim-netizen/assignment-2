@@ -91,7 +91,7 @@ nav .hamburg{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+    /* background-color: red; */
 }
 .hero-container{
     width: 100%;
@@ -381,8 +381,9 @@ nav .hamburg{
 } 
 .banner{
      /* width: 100%; */
-     min-height: 466px;
-     background-size: cover;
+     min-height: auto;
+     padding: 40px 0;
+     background-size: auto 100%;
      background-position: center;
     }
 .hero-container{
