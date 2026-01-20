@@ -22,7 +22,7 @@ nav{
     justify-content: space-between;
        max-height: 92px;
        color: white;
-       padding: 30px 200px;
+       padding: 2rem 5%;
 }
 .menu{
     display: flex;
@@ -83,7 +83,7 @@ nav .hamburg{
 
 .banner{
     width: 100%;
-    min-height: 760px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +91,8 @@ nav .hamburg{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    padding: 0 20px;
     /* background-color: red; */
 }
 .hero-container{
@@ -100,7 +102,7 @@ nav .hamburg{
     justify-content: center;
     align-items: center;
     position: relative;
-    gap: 30px;
+    gap: 2rem;
 }
 .hero-img{
     height: 350px;
@@ -114,13 +116,17 @@ nav .hamburg{
     margin: 0 auto;
     border: 8px solid rgba(42, 24, 108, 1);
 }
+.hero-img img{
+    width: 35%;
+    height: auto;
+}
 .hero-img span{
     position: absolute;
-    top: 15px;
-    right:-15px;
+    top:1rem;
+    right:1rem;
     color: black;
     background-color: #00FF88;
-    padding: 8px 16px;
+    padding:0.5rem 1rem;
     border-radius: 20px;
     font-weight: 600;
     animation: pulse 1.5s ease-in-out infinite
@@ -149,7 +155,7 @@ nav .hamburg{
 .hero-btn{
     margin-top: 24px;
     display: flex;
-    gap: 8px;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     border: none;
@@ -194,8 +200,8 @@ nav .hamburg{
 
  }
  .about{
-    padding: 0 200px;
-    max-height: 647px;
+    padding: 2rem 23%;
+    /* max-height: 647px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,11 +242,11 @@ nav .hamburg{
     line-height: 20px;
     opacity: 0.8;
  }
- .about-text #p-1{
-    margin-bottom: 80px
+ .about-text .p-1{
+    margin-bottom: 2rem;
  }
- .about-text #p-2{
-    margin-bottom: 80px;
+ .about-text .p-2{
+    margin-bottom: 2rem;
  }
 
  .about-cards{
@@ -259,16 +265,48 @@ nav .hamburg{
  .about-cards .box p{
     opacity: 0.8;
  }
+.features{
+    padding: 120px 200px;
+    text-align: center;
+    color: white;
+    background-color: #230E3D;
+}
+.features h1{
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* border: 2px solid red; */
+    text-align: left;
+    /* align-items: center; */
+}
+.features-grid img{
+    width: 50px;
+}
+.features-grid p{
+      opacity: 0.8;
+}
+.features-grid .features-card{
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #1A0B2E;
+}
 
+.features-grid .card1{
+    grid-row:span 2;  
+}
 
-
-
-
-
-
-
-
-
+.features-grid .card2, .features-grid .card3, .features-grid .card4{
+    grid-column: span 2;
+}
+.features-grid .card5{
+      grid-column: span 1;
+}
 
 
 
@@ -383,7 +421,7 @@ nav .hamburg{
      /* width: 100%; */
      min-height: auto;
      padding: 40px 0;
-     background-size: auto 100%;
+     background-size: cover;
      background-position: center;
     }
 .hero-container{
@@ -437,12 +475,21 @@ nav .hamburg{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    /* align-content: center; */
-    /* align-items: center; */
-    /* justify-items: center; */
 }
 .about-cards .box h1{
     font-size: 40px;
+}
+.features{
+    padding: 60px 20px;
+}
+.features-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.card1, .card2, .card3, .card4, .card5{
+    grid-row: unset;
+    grid-column: unset;
 }
 
 }       
