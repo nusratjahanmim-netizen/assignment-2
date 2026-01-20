@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1600px;
 }
 .font{
     font-family: "Inter", sans-serif;
   font-optical-sizing: auto;}
 body{
     background-color: #1A0B2E;
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
 }
 nav{
     border-bottom: 2px dotted rgb(47, 65, 71);
@@ -373,7 +376,7 @@ nav .hamburg{
 .banner{
      /* width: 100%; */
      min-height: 466px;
-     background-size: conver;
+     background-size: cover;
      background-position: center;
     }
 .hero-container{
@@ -410,9 +413,7 @@ nav .hamburg{
     max-width: 145px;
 }
 .about{
-    /* padding-top: 50px; */
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 0 20px;
 }
 .about-text h1{
     font-size: 32px;
@@ -427,6 +428,7 @@ nav .hamburg{
     padding-top: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     /* align-content: center; */
     /* align-items: center; */
     /* justify-items: center; */
