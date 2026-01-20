@@ -221,7 +221,10 @@ nav .hamburg{
   );
 
  }
- .about-text h1, p{
+ .about-text h1{
+    text-align: center;
+ }
+ .about-text p{
     text-align: center;
  }
  .about-text h1{
@@ -363,8 +366,11 @@ nav .hamburg{
         justify-content: space-between;
         padding: 30px 20px;
     }
+    .nav-right{
+        gap: 0;
+    }
     .menu{display: none;}
-    nav button{
+    .menu nav button{
         display: none;
     }
     
@@ -414,6 +420,7 @@ nav .hamburg{
 }
 .about{
     padding: 0 20px;
+    max-height: none;
 }
 .about-text h1{
     font-size: 32px;
