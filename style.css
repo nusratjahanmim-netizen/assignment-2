@@ -31,7 +31,7 @@ nav h1{
 }
 
 nav span{
-      background: linear-gradient(to top right,red,blue);
+      background: linear-gradient(to top right,gold,red,blue);
     -webkit-background-clip:text;
     color: transparent;
 }
@@ -54,7 +54,7 @@ nav a{
     gap: 20px;
 }
 nav button{
-    background:linear-gradient(to top right,red,blue) ;
+    background:linear-gradient(to top right,gold,red,blue) ;
     border-radius: 20px;
     padding: 12px 16px;
     gap: 6px;
@@ -79,7 +79,7 @@ nav .hamburg{
 }          
 
 .banner{
-    max-width: 100%;
+    width: 100%;
     min-height: 760px;
     display: flex;
     justify-content: center;
@@ -91,6 +91,7 @@ nav .hamburg{
     
 }
 .hero-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +102,7 @@ nav .hamburg{
 .hero-img{
     height: 350px;
     width: 350px;
-    background:linear-gradient(to top right,red,blue);
+    background:linear-gradient(to top right,gold,red,blue);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -115,7 +116,7 @@ nav .hamburg{
     top: 15px;
     right:-15px;
     color: black;
-    background-color: rgb(54, 154, 54);
+    background-color: #00FF88;
     padding: 8px 16px;
     border-radius: 20px;
     font-weight: 600;
@@ -153,8 +154,9 @@ nav .hamburg{
 
 }
  .hero-btn .hbtn-1{
-    background:linear-gradient(to top right,red,blue); 
+    background:linear-gradient(to top right,gold,red,blue); 
     border-radius: 20px;
+    border: 0;
     padding: 8px 12px;
     font-size: 16px;
     width: 200px;
@@ -170,10 +172,10 @@ nav .hamburg{
  .hbtn-1 img{
     width: 20px;
     height: 20px;
- }
+  }
  .hbtn-2{
-    border: 1px solid rgb(54, 154, 54) ;
-    color: rgb(54, 154, 54);
+    border: 1px solid #00FF88 ;
+    color:#00FF88;
     background: transparent;
     border-radius: 20px;
     cursor: pointer;
@@ -188,7 +190,69 @@ nav .hamburg{
     font-size: 16px;
 
  }
+ .about{
+    padding: 0 200px;
+    max-height: 647px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+    /* gap: 160px; */
+ }
+ .about-text{
+    margin-top: 50px;
 
+ }
+ .about-text::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 48px auto;
+    background: linear-gradient( to right,
+    transparent,
+    rgba(255,255,255,0.35),
+    transparent
+  );
+
+ }
+ .about-text h1, p{
+    text-align: center;
+ }
+ .about-text h1{
+    font-size: 48px;
+    margin-bottom: 16px;
+ }
+ .about-text p{
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.8;
+ }
+ .about-text #p-1{
+    margin-bottom: 80px
+ }
+ .about-text #p-2{
+    margin-bottom: 80px;
+ }
+
+ .about-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    gap: 80px;
+    text-align: center;
+ }
+ .about-cards .box h1{
+    font-size: 48px;
+    padding-bottom: 16px;
+    color:#00FF88 ;
+ }
+ .about-cards .box p{
+    opacity: 0.8;
+ }
 
 
 
@@ -289,6 +353,9 @@ nav .hamburg{
 
 /* responsive section */
 @media screen and (max-width:576px) {
+    html, body{
+        overflow-x: hidden;
+    } 
     .navbar{
         justify-content: space-between;
         padding: 30px 20px;
@@ -304,25 +371,25 @@ nav .hamburg{
     display: inline-flex;
 } 
 .banner{
-     min-height: 100svh;
-    padding: 60px 16px;}
+     /* width: 100%; */
+     min-height: 466px;
+     background-size: conver;
+     background-position: center;
+    }
 .hero-container{
-    background-size: 50%;
-    background-position: center;
+    padding: 120px 20px 40px;
 } 
 .hero-img{
-    width: 220px;
-    height: 220px;
-    border-width: 6px;
+    width: 200px;
+    height: 200px;
 }
 .hero-img img{
-    width: 90px;
+    width: 60px;
+    
 }
 .hero-img span{
-    padding: 6px 12px;
     font-size: 14px;
-    top: 8px;
-    right: -10px;
+    right: 6px;
 }
 .hero-text h1{
     font-size: 40px;
@@ -330,9 +397,8 @@ nav .hamburg{
 }
 .hero-text p{
     max-width: 320px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    line-height: 1.6;
     padding: 0 10px;
 }
 .hero-btn{
@@ -341,7 +407,32 @@ nav .hamburg{
 }
 .hbtn-1, .hbtn-2{
     width: 100%;
-    max-width: 280px;
+    max-width: 145px;
 }
+.about{
+    /* padding-top: 50px; */
+    padding-left: 80px;
+    padding-right: 80px;
 }
-        
+.about-text h1{
+    font-size: 32px;
+}
+.about-text #p-1{
+    margin-bottom: 10px;
+}
+.about-text #p-2{
+    margin-bottom: 10px;
+}
+.about-cards{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-items: center; */
+}
+.about-cards .box h1{
+    font-size: 40px;
+}
+
+}       
