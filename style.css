@@ -370,7 +370,7 @@ nav .hamburg{
         gap: 0;
     }
     .menu{display: none;}
-    .menu nav button{
+    .nav-right button{
         display: none;
     }
     
@@ -393,7 +393,7 @@ nav .hamburg{
     height: 200px;
 }
 .hero-img img{
-    width: 60px;
+    width: 40%;
     
 }
 .hero-img span{
