@@ -421,8 +421,9 @@ nav .hamburg{
 .footer{
     /* border: 2px solid red; */
     color: white;
-    padding: 120px;
-    min-height: 412px;
+    padding: 0 40px;
+    height: 412px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -475,8 +476,8 @@ nav .hamburg{
 }
 .footer .copyright{
     position: relative;
-    margin-top: 40px;
-    padding-top: 24px;
+    margin-top: 20px;
+    padding-top: 20px;
     font-size: 14px;
     opacity: 0.8;
     text-align: center;
@@ -695,22 +696,22 @@ nav .hamburg{
 .social-media{
     justify-content: center;
 }
-/* .footer{
-    padding: 60px 20px;
-    min-height: auto;
-    text-align: center;
-} */
+.footer{
+    height: auto;
+    padding: 48px 16px;
+    background-position: center;
+}
 .footer h1{
     font-size: 36px;
 }
 .footer ul{
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 20px 40px;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 16px px; */
+    justify-items: start;
 }
 .footer ul li {
-    justify-content: center;
+    /* width: 45%; */
     font-size: 14px;
 }
 .footer ul li img{
