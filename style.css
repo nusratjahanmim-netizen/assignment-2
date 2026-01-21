@@ -69,7 +69,7 @@ nav button{
 } 
 nav button:hover{
      background: none;
-     color: rebeccapurple;
+     /* color: rebeccapurple; */
 }
 nav button:active{
     background-color: plum;
